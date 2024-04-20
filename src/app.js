@@ -9,7 +9,6 @@ const server = http.createServer((request, response) => {
 	console.log(request.url);
 	console.log(url);
 
-
 	if (request.url === '/?hello=') {
 		response.statusCode = 400;
 		response.statusMessage = 'Error';
